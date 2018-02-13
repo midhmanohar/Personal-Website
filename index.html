@@ -33,8 +33,7 @@
   <meta name="theme-color" content="#00796B">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Roboto+Mono|Raleway:700">
@@ -143,34 +142,30 @@
 </ul>
     </div>
 </div>
-
-
-    <div class="container">
-      <div class="content">
-        <div class="posts">
-
-<div class="post">
-<form id="myForm">
- <div class="form-group">
-  <input type="text" class="form-control" id="totalClasses" placeholder="Total Classes" style="width:400px;">
-  <br>
-  <input type="text" class="form-control" id="attendClasses" placeholder="Attended Classes" style="width:400px;">
- </div>
-<form>
-  <br>
-  <button type="submit" class="btn btn-success" >Submit</button>
-
-  </div>
-
-  <div class="results">
-
-  </div>
-
-</div>
-
-      </div>
-
+<div class="container">
+  <div class="post">
+<main role="main">
+  <div class="jumbotron">
+    <h2>Bunk classes :)</h2>
+    <form id="myForm">
+     <div class="form-group">
+      <input type="text" class="form-control" id="totalClasses" placeholder="Total Classes" style="width:400px;">
     </div>
+      <div class="form-group">
+      <input type="text" class="form-control" id="attendedClasses" placeholder="Attended Classes" style="width:400px;">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</submit>
+    </form>
+     </div>
+</main>
+
+<div class="row marketing">
+          <div class="col-lg-12">
+              <div id="Results"></div>
+          </div>
+</div>
+ </div>
+</div>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -181,6 +176,6 @@
     ga('send', 'pageview');
   </script>
 
-
+<script src="js/main.js"></script>
   </body>
 </html>
