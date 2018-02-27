@@ -1,20 +1,37 @@
+// document.getElementById("myForm").addEventListener("submit", function(e) {
+//   e.preventDefault();
+//   var totalClasses = document.getElementById('totalClasses').value;
+//   var attendedClasses = document.getElementById('attendedClasses').value;
+//
+//   // console.log(totalClasses);
+//   // console.log(attendedClasses);
+//
+//   while( attendance = attendedClasses / totalClasses)  {
+//     console.log(attendance);
+//     totalClasses += 1;
+//     attendedClasses += 1;
+//     if(attendance>=0.75)
+//     {
+//       break;
+//     }
+//   }
+//   console.log(attendance);
+// });
 
-document.getElementById("myForm").addEventListener("submit",function(e){
-  e.preventDefault();
-let totalClasses=document.getElementById('totalClasses').value;
-let attendedClasses=document.getElementById('attendedClasses').value;
-0
- // console.log(totalClasses);
- // console.log(attendedClasses);
+ var count=0;
+ document.getElementById("finish").addEventListener('click',calc);
+function calc(){
+  alert(1);
+  var totalClasses=document.getElementById("totalClasses").value;
+  var attendedClasses=document.getElementById("attendedClasses").value;
+  var attendance;
+  while( attendance = attendedClasses / totalClasses)  {
 
-let attendance=(attendedClasses/totalClasses)*100;
-
-// console.log(attendance);
-
-while(attendance<75){
-  totalClasses+=1;
-  attendedClasses+=1;
-  attendance=(attendedClasses/totalClasses)*100;
-  console.log(attendance);
+    totalClasses += 1;
+    attendedClasses += 1;
+    if(attendance>=0.75)
+    {
+      break;
+    }
+  }
 }
-});
