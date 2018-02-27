@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tweet{
+      width:300px !important;
+      height: 300px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+  .tweet{
+    width:600px !important;
+    height: 600px !important;
+  }
+}
