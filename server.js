@@ -25,11 +25,8 @@ app.get('/ui/image1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'image1.jpg'));
 });
 
-
-// Do not change port, otherwise your app won't run on IMAD servers
-// Use 8080 only for local development if you already have apache running on 80
-
-var port = 3000;
-app.listen(port, function () {
-  console.log(`Web app listening on port ${port}!`);
-});
+app.listen(8080,"127.0.0.1");
+// var port = 3000;
+// app.listen(port, function () {
+//   console.log(`Web app listening on port ${port}!`);
+// });
