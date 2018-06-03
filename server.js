@@ -9,10 +9,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/bootstrap.min.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.css'));
-});
-
 app.get('/custom.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'custom.css'));
 });
