@@ -21,6 +21,10 @@ app.get('/image1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'image1.jpg'));
 });
 
+app.get('/m.png',function(req,res){
+	res.sendFile(path.join(__dirname,'ui','m.png'));
+});
+
 app.listen(8080,"127.0.0.1");
 // var port = 3000;
 // app.listen(port, function () {
